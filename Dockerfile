@@ -4,6 +4,9 @@ RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-
 # Install Node.js and npm
 RUN     yum install -y npm
 
+# application binary will be put in here - unzipped
+RUN mkdir -p /var/app
+
 EXPOSE  8080
 USER daemon
 
