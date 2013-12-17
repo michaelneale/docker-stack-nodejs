@@ -6,6 +6,7 @@ RUN     yum install -y npm
 
 # application binary will be put in here - unzipped
 RUN mkdir -p /var/app
+RUN mkdir -p /.genapp
 
 EXPOSE  8080
 USER daemon
